@@ -1,4 +1,3 @@
-//<![CDATA[
 $(window).on('hashchange', function(e){
 
 $(".ty_remove .tylabel_remove").each(function(){var e=$(this).text();if(e.substr(0,10).match("ty")){e=e.replace("ty_","");$(this).html('<div class="mytype"><span class="ty">'+e+"</span></div>")}$(".mytype").parent(".tylabel_remove").replaceWith(function(){return $(this).contents()});$(".ty_remove").replaceWith(function(){return $(this).contents()})});
@@ -51,5 +50,3 @@ $(this).html("<div class='coba'>"+e+"</div>");$(".coba").parent("a").remove()}})
 
 $(".labelkita a").each(function(){var e=$(this).text();if(e.substr(0,10).match("gn")){e=e.replace("gn_","");
 $(this).html(e);$(".labelkita").parent("a").push()}});
-
-//]]>
