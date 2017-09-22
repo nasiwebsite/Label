@@ -12,6 +12,11 @@ $(".se_remove .selabel_remove").each(function(){var e=$(this).text();if(e.substr
 $(".se_remove").replaceWith(function(){return $(this).contents()})});
 $(".selabel_remove").remove()
 
+$(".ge_remove .gelabel_remove").each(function(){var e=$(this).text();if(e.substr(0,10).match("ge"))
+{e=e.replace("ge_"," ");$(this).html('<div class="genre"><span class="ge">'+e+"</span></div>")}$(".genre").parent(".gelabel_remove").replaceWith(function(){return $(this).contents()});
+$(".ge_remove").replaceWith(function(){return $(this).contents()})});
+$(".gelabel_remove").remove()
+
 
 $(".labelkita a").each(function(){var e=$(this).text();if(e.substr(0,10).match("se")){e=e.replace("se_","");
 $(this).html("<div class='coba'>"+e+"</div>");$(".coba").parent("a").remove()}});
@@ -37,6 +42,10 @@ $(".stlabel_remove").remove()
 $(".se_remove .selabel_remove").each(function(){var e=$(this).text();if(e.substr(0,10).match("se")){e=e.replace("se_"," ");$(this).html('<div class="season"><span class="se">'+e+"</span></div>")}$(".season").parent(".selabel_remove").replaceWith(function(){return $(this).contents()});
 $(".se_remove").replaceWith(function(){return $(this).contents()})});
 $(".selabel_remove").remove()
+
+$(".ge_remove .gelabel_remove").each(function(){var e=$(this).text();if(e.substr(0,10).match("ge")){e=e.replace("ge_"," ");$(this).html('<div class="genre"><span class="ge">'+e+"</span></div>")}$(".genre").parent(".gelabel_remove").replaceWith(function(){return $(this).contents()});
+$(".ge_remove").replaceWith(function(){return $(this).contents()})});
+$(".gelabel_remove").remove()
 
 
 $(".labelkita a").each(function(){var e=$(this).text();if(e.substr(0,10).match("se")){e=e.replace("se_","");
